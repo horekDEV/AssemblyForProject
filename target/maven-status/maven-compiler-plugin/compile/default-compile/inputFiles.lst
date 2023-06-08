@@ -1,0 +1,9 @@
+/home/horek/ideaProject/AssemblyForProject/src/main/java/ru/horekdev/assemblyforproject/command/admincommand/FlySpeedCMD.java
+/home/horek/ideaProject/AssemblyForProject/src/main/java/ru/horekdev/assemblyforproject/util/TimeUtil.java
+/home/horek/ideaProject/AssemblyForProject/src/main/java/ru/horekdev/assemblyforproject/command/regestration/RegisterCMD.java
+/home/horek/ideaProject/AssemblyForProject/src/main/java/ru/horekdev/assemblyforproject/command/admincommand/KillCMD.java
+/home/horek/ideaProject/AssemblyForProject/src/main/java/ru/horekdev/assemblyforproject/command/admincommand/KickCMD.java
+/home/horek/ideaProject/AssemblyForProject/src/main/java/ru/horekdev/assemblyforproject/AssemblyForProject.java
+/home/horek/ideaProject/AssemblyForProject/src/main/java/ru/horekdev/assemblyforproject/command/playercommand/RtpCMD.java
+/home/horek/ideaProject/AssemblyForProject/src/main/java/ru/horekdev/assemblyforproject/command/admincommand/BanCMD.java
+/home/horek/ideaProject/AssemblyForProject/src/main/java/ru/horekdev/assemblyforproject/command/regestration/LoginCMD.java

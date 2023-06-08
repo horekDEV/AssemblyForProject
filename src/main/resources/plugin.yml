@@ -1,0 +1,17 @@
+name: AssemblyForProject
+version: '${project.version}'
+main: ru.horekdev.assemblyforproject.AssemblyForProject
+api-version: 1.19
+authors: [horek]
+description: custom assembly for private project
+website: horek-dev.ru
+
+commands:
+  ban: {}
+  kick: {}
+  kill: {}
+  speed: {}
+  mute: {}
+  setSpawn: {}
+  mix: {}
+  tpall: {}
