@@ -49,6 +49,9 @@ public class BanCMD implements CommandExecutor {
                     return true;
                 }
             }
+        } else {
+            player.sendMessage("You don't have permissions to use this command");
+            return true;
         }
 
         return true;

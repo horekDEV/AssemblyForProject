@@ -3,7 +3,7 @@ version: '${project.version}'
 main: ru.horekdev.assemblyforproject.AssemblyForProject
 api-version: 1.19
 authors: [horek]
-description: custom assembly for private project
+description: custom assembly for private or public project
 website: horek-dev.ru
 
 commands:
@@ -15,3 +15,4 @@ commands:
   setSpawn: {}
   mix: {}
   tpall: {}
+  gm: {}
