@@ -22,7 +22,6 @@ public final class AssemblyForProject extends JavaPlugin {
         getCommand("ban").setExecutor(new BanCMD());
         getCommand("speed").setExecutor(new FlySpeedCMD());
         getCommand("setSpawn").setExecutor(new SetSpawnCMD());
-        getCommand("mix").setExecutor(new MixCMD());
         getCommand("tpall").setExecutor(new TpallCMD());
         getCommand("gm").setExecutor(new GameModeCMD());
     }
@@ -33,6 +32,6 @@ public final class AssemblyForProject extends JavaPlugin {
 
         getLogger().info("Plugin " + getDescription().getName() + " was enable");
         getLogger().info("made by " + getDescription().getAuthors());
-        
+
     }
 }
