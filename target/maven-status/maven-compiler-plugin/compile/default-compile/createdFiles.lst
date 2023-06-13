@@ -1,0 +1,10 @@
+ru/horekdev/assemblyforproject/command/admins_commands/BanCMD.class
+ru/horekdev/assemblyforproject/command/admins_commands/KickCMD.class
+ru/horekdev/assemblyforproject/command/admins_commands/FlySpeedCMD.class
+ru/horekdev/assemblyforproject/command/admins_commands/KillCMD.class
+ru/horekdev/assemblyforproject/command/world_commands/SetSpawnCMD.class
+ru/horekdev/assemblyforproject/command/world_commands/ChangeDifficulty.class
+ru/horekdev/assemblyforproject/AssemblyForProject.class
+ru/horekdev/assemblyforproject/command/world_commands/GameModeCMD.class
+ru/horekdev/assemblyforproject/command/admins_commands/TpallCMD.class
+ru/horekdev/assemblyforproject/util/TimeUtil.class

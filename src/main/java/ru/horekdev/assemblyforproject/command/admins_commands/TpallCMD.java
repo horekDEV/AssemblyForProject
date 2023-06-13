@@ -1,4 +1,4 @@
-package ru.horekdev.assemblyforproject.command;
+package ru.horekdev.assemblyforproject.command.admins_commands;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -9,13 +9,13 @@ import org.bukkit.entity.Player;
 public class TpallCMD implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
-        Player player = (Player) commandSender;
-
-        if (player.isOp()) {
-            for (Player online: Bukkit.getOnlinePlayers()) {
-                player.teleport(online.getLocation());
-                player.sendMessage("All players teleported to you");
-                return true;
+        if (commandSender instanceof Player player) {
+            if (player.isOp()) {
+                for (Player online: Bukkit.getOnlinePlayers()) {
+                    online.teleport(player.getLocation());
+                    player.sendMessage("All players teleported to you");
+                    return true;
+                }
             }
         }
 

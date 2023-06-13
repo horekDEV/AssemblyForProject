@@ -1,4 +1,4 @@
-package ru.horekdev.assemblyforproject.command;
+package ru.horekdev.assemblyforproject.command.world_commands;
 
 import org.bukkit.World;
 import org.bukkit.command.Command;
@@ -13,7 +13,7 @@ public class SetSpawnCMD implements CommandExecutor {
         World world = player.getWorld();
 
         if (player.isOp()) {
-            world.setSpawnLocation(player.getLocation());
+            world.setSpawnLocation(player.getLocation().getBlockX(), player.getLocation().getBlockY(), player.getLocation().getBlockZ());
             player.sendMessage("You update spawn location in this world!");
             return true;
 

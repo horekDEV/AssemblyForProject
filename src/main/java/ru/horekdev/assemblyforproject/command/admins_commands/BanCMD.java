@@ -1,4 +1,4 @@
-package ru.horekdev.assemblyforproject.command;
+package ru.horekdev.assemblyforproject.command.admins_commands;
 
 import org.bukkit.BanList;
 import org.bukkit.Bukkit;

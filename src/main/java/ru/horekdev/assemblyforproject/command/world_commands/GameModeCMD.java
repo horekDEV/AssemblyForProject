@@ -1,4 +1,4 @@
-package ru.horekdev.assemblyforproject.command;
+package ru.horekdev.assemblyforproject.command.world_commands;
 
 import org.bukkit.GameMode;
 import org.bukkit.command.Command;
