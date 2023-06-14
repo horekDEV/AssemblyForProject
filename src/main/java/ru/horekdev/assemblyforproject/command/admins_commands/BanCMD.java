@@ -17,7 +17,7 @@ public class BanCMD implements CommandExecutor {
 
         if (player.isOp()) {
             if (Bukkit.getPlayer(strings[0]).isOp()) {
-                player.sendMessage("You cant ban this player because he(she) is operator");
+                player.sendMessage("You can't ban this player because he(she) is operator");
                 return true;
 
             } else {

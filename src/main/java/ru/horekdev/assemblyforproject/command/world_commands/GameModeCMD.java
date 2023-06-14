@@ -13,18 +13,22 @@ public class GameModeCMD implements CommandExecutor {
             if (player.isOp()) {
                 if (strings[0].equalsIgnoreCase("0")) {
                     player.setGameMode(GameMode.SURVIVAL);
+                    player.sendMessage("Your gamemode was update");
                     return true;
 
                 } else if (strings[0].equalsIgnoreCase("1")) {
                     player.setGameMode(GameMode.CREATIVE);
+                    player.sendMessage("Your gamemode was update");
                     return true;
 
                 } else if (strings[0].equalsIgnoreCase("2")) {
                     player.setGameMode(GameMode.ADVENTURE);
+                    player.sendMessage("Your gamemode was update");
                     return true;
 
                 } else if (strings[0].equalsIgnoreCase("3")) {
                     player.setGameMode(GameMode.SPECTATOR);
+                    player.sendMessage("Your gamemode was update");
                     return true;
                 }
 
@@ -33,7 +37,7 @@ public class GameModeCMD implements CommandExecutor {
                 return true;
             }
         } else {
-            commandSender.sendMessage("this command can use only player!");
+            commandSender.sendMessage("This command can use only player!");
             return true;
         }
 

@@ -14,7 +14,7 @@ public class SetSpawnCMD implements CommandExecutor {
 
         if (player.isOp()) {
             world.setSpawnLocation(player.getLocation().getBlockX(), player.getLocation().getBlockY(), player.getLocation().getBlockZ());
-            player.sendMessage("You update spawn location in this world!");
+            player.sendMessage("You update spawn location in world!");
             return true;
 
         } else {

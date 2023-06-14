@@ -13,7 +13,7 @@ public class KillCMD implements CommandExecutor {
 
         if (player.isOp()) {
             if (Bukkit.getPlayer(strings[0]).isOp()) {
-                player.sendMessage("You cant kill this player because he(she) is operator");
+                player.sendMessage("You can't kill this player because he(she) is operator");
                 return true;
 
             } else {
