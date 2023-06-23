@@ -17,10 +17,15 @@ public class TimeCMD implements TabExecutor {
             if (player.isOp()) {
                 if (strings[0].equalsIgnoreCase("day")) {
                     Bukkit.getWorlds().stream().filter(World::isNatural).forEach(world -> world.setTime(100));
+                    return true;
 
                 } else if (strings[0].equalsIgnoreCase("night")) {
                     Bukkit.getWorlds().stream().filter(World::isNatural).forEach(world -> world.setTime(16000));
+                    return true;
                 }
+            } else {
+                player.sendMessage("You don't have permissions to use this command");
+                return true;
             }
         }
 

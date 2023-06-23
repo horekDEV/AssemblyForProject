@@ -16,6 +16,9 @@ public class TpallCMD implements CommandExecutor {
                         .forEach(p -> p.teleport(player));
 
                 player.sendMessage("All player teleported to you :)");
+            } else {
+                player.sendMessage("You don't have permissions to use this command");
+                return true;
             }
         }
 
