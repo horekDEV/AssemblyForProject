@@ -21,32 +21,41 @@ public class BanCMD implements CommandExecutor {
                 return true;
 
             } else {
-                long time = Long.parseLong(strings[2]);
-                Date date = new Date(time);
+                for (int i = 2; i < 100; i++) {
+                    long time = Long.parseLong(String.valueOf(strings[2].length() - 1));
 
-                if (strings[2].substring(strings.length - 1).equalsIgnoreCase("min")) {
-                    TimeUtil.minReturn(time);
-                    Bukkit.getBanList(BanList.Type.NAME).addBan(strings[0], strings[1], date, null);
-                    player.sendMessage("You ban player: " + Bukkit.getPlayer(strings[0]).getName());
-                    return true;
+                    if (strings[2].substring(strings.length - 1).equalsIgnoreCase("min")) {
+                        TimeUtil.minReturn(time);
+                        Date date = new Date(time);
 
-                } else if (strings[2].substring(strings.length - 1).equalsIgnoreCase("h")) {
-                    TimeUtil.hourReturn(time);
-                    Bukkit.getBanList(BanList.Type.NAME).addBan(strings[0], strings[1], date, null);
-                    player.sendMessage("You ban player: " + Bukkit.getPlayer(strings[0]).getName());
-                    return true;
+                        Bukkit.getBanList(BanList.Type.NAME).addBan(strings[0], strings[i], date, null);
+                        player.sendMessage("You ban player: " + Bukkit.getPlayer(strings[0]).getName());
+                        return true;
 
-                } else if (strings[2].substring(strings.length - 1).equalsIgnoreCase("m")) {
-                    TimeUtil.monthReturn(time);
-                    Bukkit.getBanList(BanList.Type.NAME).addBan(strings[0], strings[1], date, null);
-                    player.sendMessage("You ban player: " + Bukkit.getPlayer(strings[0]).getName());
-                    return true;
+                    } else if (strings[2].substring(strings.length - 1).equalsIgnoreCase("h")) {
+                        TimeUtil.hourReturn(time);
+                        Date date = new Date(time);
 
-                } else if (strings[2].substring(strings.length - 1).equalsIgnoreCase("d")) {
-                    TimeUtil.dayReturn(time);
-                    Bukkit.getBanList(BanList.Type.NAME).addBan(strings[0], strings[1], date, null);
-                    player.sendMessage("You ban player: " + Bukkit.getPlayer(strings[0]).getName());
-                    return true;
+                        Bukkit.getBanList(BanList.Type.NAME).addBan(strings[0], strings[i], date, null);
+                        player.sendMessage("You ban player: " + Bukkit.getPlayer(strings[0]).getName());
+                        return true;
+
+                    } else if (strings[2].substring(strings.length - 1).equalsIgnoreCase("m")) {
+                        TimeUtil.monthReturn(time);
+                        Date date = new Date(time);
+
+                        Bukkit.getBanList(BanList.Type.NAME).addBan(strings[0], strings[i], date, null);
+                        player.sendMessage("You ban player: " + Bukkit.getPlayer(strings[0]).getName());
+                        return true;
+
+                    } else if (strings[2].substring(strings.length - 1).equalsIgnoreCase("d")) {
+                        TimeUtil.dayReturn(time);
+                        Date date = new Date(time);
+
+                        Bukkit.getBanList(BanList.Type.NAME).addBan(strings[0], strings[i], date, null);
+                        player.sendMessage("You ban player: " + Bukkit.getPlayer(strings[0]).getName());
+                        return true;
+                    }
                 }
             }
         } else {

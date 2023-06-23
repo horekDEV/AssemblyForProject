@@ -85,7 +85,7 @@ public class OnEvents implements Listener {
 
                     @Override
                     public void onLand(Location location) {}
-                }.start(1200, event.getWhoClicked().getWorld());
+                }.start(1200);
             }
 
         } else if (event.getSlot() == 12) {

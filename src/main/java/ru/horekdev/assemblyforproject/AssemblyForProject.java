@@ -29,6 +29,7 @@ public final class AssemblyForProject extends JavaPlugin {
         getCommand("tpall").setExecutor(new TpallCMD());
         getCommand("gm").setExecutor(new GameModeCMD());
         getCommand("mix").setExecutor(new Mix());
+        getCommand("t").setExecutor(new TimeCMD());
 
         getServer().getPluginManager().registerEvents(new OnEvents(), this);
         getServer().getPluginManager().registerEvents(new BetweenEvents(), this);

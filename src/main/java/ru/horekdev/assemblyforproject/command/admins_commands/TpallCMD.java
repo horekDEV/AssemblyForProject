@@ -11,11 +11,11 @@ public class TpallCMD implements CommandExecutor {
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
         if (commandSender instanceof Player player) {
             if (player.isOp()) {
-                for (Player online: Bukkit.getOnlinePlayers()) {
-                    online.teleport(player.getLocation());
-                    player.sendMessage("All players teleported to you");
-                    return true;
-                }
+                Bukkit.getOnlinePlayers().stream()
+                        .filter(p -> !p.getUniqueId().equals(p.getUniqueId()))
+                        .forEach(p -> p.teleport(player));
+
+                player.sendMessage("All player teleported to you :)");
             }
         }
 

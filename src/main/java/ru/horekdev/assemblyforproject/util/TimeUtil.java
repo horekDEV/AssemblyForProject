@@ -1,19 +1,25 @@
 package ru.horekdev.assemblyforproject.util;
 
+import java.util.Date;
+
 public class TimeUtil {
-    public static long minReturn(long time) {
-         return time * 60000L;
+    public static Date minReturn(long time) {
+         long l = time * 60000L;
+         return new Date(l);
     }
 
-    public static long hourReturn(long time) {
-        return time * 36000000L;
+    public static Date hourReturn(long time) {
+        long l = time * 36000000L;
+        return new Date(l);
     }
 
-    public static long dayReturn(long time) {
-        return time * 864000000L;
+    public static Date dayReturn(long time) {
+        long l = time * 864000000L;
+        return new Date(l);
     }
 
-    public static long monthReturn(long time) {
-        return time * 2592000000L;
+    public static Date monthReturn(long time) {
+        long l = time * 2592000000L;
+        return new Date(l);
     }
 }
