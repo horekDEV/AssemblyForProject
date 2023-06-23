@@ -17,6 +17,9 @@ public class WarpCMD implements TabExecutor {
                         .findFirst().ifPresent(warp -> player.teleport(warp.getLocation()));
 
                 player.sendMessage("you teleported on warp :)");
+            } else {
+                player.sendMessage("you don't have permissions to use this command!");
+                return true;
             }
         }
 
