@@ -36,7 +36,13 @@ public class ChangeDifficulty implements TabExecutor {
                     player.sendMessage("World difficulty was update to HARD");
                     return true;
                 }
+            } else {
+                player.sendMessage("You don't have permissions to use this command");
+                return true;
             }
+        } else {
+            commandSender.sendMessage("Sorry, but this command can use only player");
+            return true;
         }
 
         return true;

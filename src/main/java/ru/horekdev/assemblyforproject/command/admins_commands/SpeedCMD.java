@@ -76,6 +76,9 @@ public class SpeedCMD implements TabExecutor {
             } else {
                 player.sendMessage("You don't have permissions to use this command");
             }
+        } else {
+            commandSender.sendMessage("Sorry, but this command can use only player");
+            return true;
         }
 
         return true;

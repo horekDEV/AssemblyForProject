@@ -20,6 +20,8 @@ public class TpallCMD implements CommandExecutor {
                 player.sendMessage("You don't have permissions to use this command");
                 return true;
             }
+        } else {
+            commandSender.sendMessage("Sorry, but this command can use only player");
         }
 
         return true;

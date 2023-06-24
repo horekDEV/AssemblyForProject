@@ -37,7 +37,7 @@ public class GameModeCMD implements CommandExecutor {
                 return true;
             }
         } else {
-            commandSender.sendMessage("This command can use only player!");
+            commandSender.sendMessage("Sorry, but this command can use only player");
             return true;
         }
 
